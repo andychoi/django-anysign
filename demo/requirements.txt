@@ -1,0 +1,4 @@
+django
+django-nose
+# django-anysign
+git+https://github.com/andychoi/django-anysign.git
