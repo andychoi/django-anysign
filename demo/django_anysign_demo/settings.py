@@ -2,6 +2,9 @@
 """Django settings for django-anysign demo project."""
 import os
 
+# Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
 
 # Configure some relative directories.
 demoproject_dir = os.path.dirname(os.path.abspath(__file__))
@@ -20,7 +23,7 @@ WSGI_APPLICATION = 'django_anysign_demo.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(data_dir, 'db.sqlite'),
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
